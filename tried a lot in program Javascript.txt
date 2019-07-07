@@ -1,0 +1,43 @@
+/* if ("click" === document.getElementById(button[0]).innerHTML &&
+        "click" === document.getElementById(button[1]).innerHTML &&
+        "click" === document.getElementById(button[2]).innerHTML &&
+        "click" === document.getElementById(button[3]).innerHTML &&
+        "click" === document.getElementById(button[4]).innerHTML &&
+        "click" === document.getElementById(button[5]).innerHTML &&
+        "click" === document.getElementById(button[6]).innerHTML &&
+        "click" === document.getElementById(button[7]).innerHTML &&
+        "click" === document.getElementById(button[8]).innerHTML   
+       ) 
+     {document.getElementById(button[buttonnumber]).textContent = "X"} */
+//=================================================================================================
+//document.getElementById(button[1]).textContent = "X"
+//console.log(oddeven(7))
+
+
+/*  let click = 100
+ for ( var number =1  ; number <= click ; number++)
+
+ {
+
+    if ()
+
+
+ }  */
+
+//var doc = document.getElementById
+
+/* var clickall= []
+
+for (var num=0 ; num < 9 ;num++) {
+
+    clickall.push(document.getElementById(button[num]).innerHTML)
+} */
+
+//Button 2
+/* document.getElementById(button[1]).addEventListener('click' , function() {
+
+    document.getElementById(button[1]).textContent = "X"
+
+} ) */
+
+//button Array (Actully this are IDs of Button defined in HTML)
