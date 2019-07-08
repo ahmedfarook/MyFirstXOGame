@@ -59,6 +59,9 @@ function clicks(buttonnumber) {
 
             else 
             {
+               //if is used to avoid double click
+               if ("click" === document.getElementById(button[buttonnumber]).innerHTML)
+              {
                     document.getElementById(button[buttonnumber]).style.fontSize = "32px";
                     document.getElementById(button[buttonnumber]).style.color = "black";
                     document.getElementById(button[buttonnumber]).textContent = "X"
@@ -84,7 +87,7 @@ function clicks(buttonnumber) {
                                             
                     } // for is ending
                     
-                    
+               }  //closing if
                                       
             }
     })
