@@ -8,6 +8,7 @@ function oddeven (number) {
     
 }
 
+var comb = ["012","345","678","036","147","258","246","048"]
 
 var button = ["one","two","three","four","five","six","seven","eight","nine"]
 
@@ -26,19 +27,66 @@ function clicks(buttonnumber) {
                     "O" === document.getElementById(button[num1]).innerHTML )
                    {count.push(document.getElementById(button[num1]).innerHTML)}    
             }
-              
-            console.log(count.length)
-    
-            if (oddeven(count.length) === "oddnumber") {
-            
-                {
-                    if ("click" === document.getElementById(button[buttonnumber]).textContent)
-                    {document.getElementById(button[buttonnumber]).textContent = "O"}
-                }
-    
+            //if value is ODD then it will be O and and if the value is EVEN it will be X    
+            if (oddeven(count.length) === "oddnumber") 
+            {
+                  if ("click" === document.getElementById(button[buttonnumber]).textContent)
+                    {
+                        document.getElementById(button[buttonnumber]).style.fontSize = "32px";
+                        document.getElementById(button[buttonnumber]).textContent = "O"
+                        
+                        // Result combination green
+                        for (n=0 ; n < comb.length ; n++) {
+                                          
+                            if ("O" === document.getElementById(button[comb[n][0]]).innerHTML &&
+                                "O" === document.getElementById(button[comb[n][1]]).innerHTML &&
+                                "O" === document.getElementById(button[comb[n][2]]).innerHTML 
+                                ) 
+                                {
+                                document.getElementById(button[comb[n][0]]).style.backgroundColor = "darkgreen"
+                                document.getElementById(button[comb[n][1]]).style.backgroundColor = "darkgreen"
+                                document.getElementById(button[comb[n][2]]).style.backgroundColor = "darkgreen"
+
+                                document.getElementById("EndGame").style.visibility = 'visible'
+                                document.getElementById("EndGame").textContent = "You OutPerformer Smart Guy Won The Game"
+                                }
+                                                              
+                            }
+
+                    }
+                            
              }
-    
-            else {document.getElementById(button[buttonnumber]).textContent = "X"}
+
+            else 
+            {
+                    document.getElementById(button[buttonnumber]).style.fontSize = "32px";
+                    document.getElementById(button[buttonnumber]).style.color = "black";
+                    document.getElementById(button[buttonnumber]).textContent = "X"
+                    
+                //finding result combinations and marking the same as green
+                // first i have stored all the possible combinations in COMB variable as an array
+                //As comb.length is 8 and each data in array has 3 values i ran the below loop looks complicated but will try to simplyfy
+                    for (n=0 ; n < comb.length ; n++) {
+                                          
+                            if ("X" === document.getElementById(button[comb[n][0]]).innerHTML &&
+                                "X" === document.getElementById(button[comb[n][1]]).innerHTML &&
+                                "X" === document.getElementById(button[comb[n][2]]).innerHTML 
+                            ) 
+                            {
+                            document.getElementById(button[comb[n][0]]).style.backgroundColor = "darkgreen"
+                            document.getElementById(button[comb[n][1]]).style.backgroundColor = "darkgreen"
+                            document.getElementById(button[comb[n][2]]).style.backgroundColor = "darkgreen"
+                            
+                            document.getElementById("EndGame").style.visibility = 'visible'
+                            document.getElementById("EndGame").textContent = "You X-tra Smart Guy Won The Game"
+                            }
+                            
+                                            
+                    } // for is ending
+                    
+                    
+                                      
+            }
     })
 
 }
@@ -49,4 +97,4 @@ function clicks(buttonnumber) {
         clicks(num)
     } 
 
-   
+    

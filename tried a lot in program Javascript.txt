@@ -41,3 +41,37 @@ for (var num=0 ; num < 9 ;num++) {
 } ) */
 
 //button Array (Actully this are IDs of Button defined in HTML)
+
+
+
+====================================================
+       
+                   /*  else if ("X" === document.getElementById(button[0]).innerHTML &&
+                             "X" === document.getElementById(button[1]).innerHTML &&
+                             "X" === document.getElementById(button[2]).innerHTML 
+                            ) 
+                    {
+                        document.getElementById(button[0]).style.backgroundColor = "darkgreen"
+                        document.getElementById(button[1]).style.backgroundColor = "darkgreen"
+                        document.getElementById(button[2]).style.backgroundColor = "darkgreen"
+                    }
+                    //check 3,4,5
+                    else if ("X" === document.getElementById(button[3]).innerHTML &&
+                             "X" === document.getElementById(button[4]).innerHTML &&
+                             "X" === document.getElementById(button[5]).innerHTML 
+                            ) 
+                    {
+                        document.getElementById(button[3]).style.backgroundColor = "darkgreen"
+                        document.getElementById(button[4]).style.backgroundColor = "darkgreen"
+                        document.getElementById(button[5]).style.backgroundColor = "darkgreen"
+                    }
+                    //6,7,8
+                    else if ("X" === document.getElementById(button[6]).innerHTML &&
+                             "X" === document.getElementById(button[7]).innerHTML &&
+                             "X" === document.getElementById(button[8]).innerHTML 
+                            ) 
+                    {
+                        document.getElementById(button[6]).style.backgroundColor = "darkgreen"
+                        document.getElementById(button[7]).style.backgroundColor = "darkgreen"
+                        document.getElementById(button[8]).style.backgroundColor = "darkgreen"
+                    } */

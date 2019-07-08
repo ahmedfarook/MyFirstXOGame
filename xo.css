@@ -108,6 +108,21 @@ a {
 
 }
 
+#EndGame {
+
+    visibility: hidden;
+    background: none;
+    border: none; 
+    padding: 0%;
+    margin: 0%;
+    left: 47.5%;
+    top: 70%;
+    width: 350px;
+    text-decoration: none;
+    font-family: 'Comic Sans MS';
+    font-size: 25px;
+}
+
 img {
 right: 47.5%;
 transform: translateX(20%)
