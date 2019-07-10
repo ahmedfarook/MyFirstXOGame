@@ -14,8 +14,10 @@
 
 @-ms-viewport
 {
-    
+    zoom:1;
+    width:extend-to-zoom;
 }
+
 body {
     
    max-width: 100%;
