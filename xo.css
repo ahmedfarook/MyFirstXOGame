@@ -5,13 +5,24 @@
     padding: 0%;
     margin: 0%;
 }
+@viewport {
 
+    zoom:1;
+    width:extend-to-zoom;
+   
+}
+
+@-ms-viewport
+{
+    
+}
 body {
     
-
+   max-width: 100%;
    background-color: white;
    
 }
+
 
 /* img {
     
@@ -27,6 +38,7 @@ button:hover i { margin-right: 20px; }
 
 button {
     display: 100%;
+    max-width: 360px;
     position: absolute;
     width: 70px;
     height: 41px;
@@ -128,3 +140,137 @@ right: 47.5%;
 transform: translateX(20%)
 
 }
+
+@media screen and (max-width:700px) {
+
+    body {
+            width:100%;
+            height: 740px;
+
+        }
+        
+        #one {
+            left: 21%;
+            top: 33.7%;
+        }
+
+        #two {
+    
+            left: 46.0%;
+            top: 33.7%;
+        }
+        
+        #three {
+            
+            left: 71%;
+            top: 33.7%;
+         }
+        
+        #four {
+            left: 21%;
+            top: 40.7%;
+        }
+        
+        #five {
+        
+            left: 46%;
+            top: 40.7%;
+        }
+        
+        #six {
+            left: 71%;
+            top: 40.7%;
+        }
+        
+        #seven {
+            left: 21%;
+            top: 48%;
+         }
+        
+        #eight {
+         
+            left: 46%;
+            top: 48%;
+         }
+        
+        #nine {
+            left: 71%;
+            top: 48%;
+            
+        }
+
+        #EndGame {
+
+            visibility: hidden;
+            background: none;
+            border: none; 
+            padding: 0%;
+            margin: 0%;
+            left: 47.5%;
+            top: 70%;
+            width: 300px;
+            text-decoration: none;
+            font-family: 'Comic Sans MS';
+            font-size: 25px;
+        }
+
+}
+
+/* @media screen and (max-width:768px) {
+
+    body {
+            width:100%;
+            height: 740px;
+
+        }
+        
+        #one {
+            left: 30.0%;
+            top: 33.7%;
+        }
+
+        #two {
+    
+            left: 46.0%;
+            top: 33.7%;
+        }
+        
+        #three {
+            
+            left: 62.0%;
+            top: 33.7%;
+         }
+        
+        #four {
+            left: 30%;
+            top: 40.7%;
+        }
+        
+        #five {
+        
+            left: 46%;
+            top: 40.7%;
+        }
+        
+        #six {
+            left: 62%;
+            top: 40.7%;
+        }
+        
+        #seven {
+            left: 30%;
+            top: 48%;
+         }
+        
+        #eight {
+         
+            left: 46%;
+            top: 48%;
+         }
+        
+        #nine {
+            left: 62%;
+            top: 48%;
+            
+        }
+}  */
