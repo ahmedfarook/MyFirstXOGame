@@ -49,6 +49,11 @@ function clicks(buttonnumber) {
 
                                 document.getElementById("EndGame").style.visibility = 'visible'
                                 document.getElementById("EndGame").textContent = "You OutPerformer Smart Guy Won The Game"
+                                    //Disable all the button after the Player wins
+                                        for(i=0 ; i < 9 ; i ++) 
+                                        {
+                                        document.getElementById(button[i]).disabled = true
+                                        }
                                 }
                                                               
                             }
@@ -82,6 +87,12 @@ function clicks(buttonnumber) {
                             
                             document.getElementById("EndGame").style.visibility = 'visible'
                             document.getElementById("EndGame").textContent = "You X-tra Smart Guy Won The Game"
+                                
+                                //Disable all the button after the Player wins
+                                        for(i=0 ; i < 9 ; i ++) 
+                                        {
+                                        document.getElementById(button[i]).disabled = true
+                                        }
                             }
                             
                                             
