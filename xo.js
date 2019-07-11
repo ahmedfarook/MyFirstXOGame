@@ -9,7 +9,11 @@ function oddeven (number) {
 }
 
 var comb = ["012","345","678","036","147","258","246","048"]
+
 var button = ["one","two","three","four","five","six","seven","eight","nine"]
+
+
+
 function draw() {
 
     
@@ -31,7 +35,9 @@ function draw() {
         document.getElementById("EndGame").textContent = "You Both are Genious Try one more time"
 
         }       
+ 
 
+}
 /*Creating a funtion as not to repeat each time for every button
   ButtonNumber will be the input number whic
 */
@@ -54,7 +60,7 @@ function clicks(buttonnumber) {
                     {
                         document.getElementById(button[buttonnumber]).style.fontSize = "32px";
                         document.getElementById(button[buttonnumber]).textContent = "O"
-                        
+                       
                         // Result combination green
                         for (n=0 ; n < comb.length ; n++) {
                                           
@@ -69,36 +75,39 @@ function clicks(buttonnumber) {
 
                                 document.getElementById("EndGame").style.visibility = 'visible'
                                 document.getElementById("EndGame").textContent = "You OutPerformer Smart Guy Won The Game"
-                                    //Disable all the button after the Player wins
+                                        //Disable all the button after the Player wins
                                         for(i=0 ; i < 9 ; i ++) 
                                         {
                                         document.getElementById(button[i]).disabled = true
                                         }
                                 }
-                                                              
-                            }
-
+                            
+                                                                             
+                        }
+                        
                     }
                             
              }
 
-            else 
+            else if (oddeven(count.length) === "evennumber")
             {
                //if is used to avoid double click
+              
                if ("click" === document.getElementById(button[buttonnumber]).innerHTML)
               {
                     document.getElementById(button[buttonnumber]).style.fontSize = "32px";
                     document.getElementById(button[buttonnumber]).style.color = "black";
                     document.getElementById(button[buttonnumber]).textContent = "X"
                     
+                 
                 //finding result combinations and marking the same as green
                 // first i have stored all the possible combinations in COMB variable as an array
                 //As comb.length is 8 and each data in array has 3 values i ran the below loop looks complicated but will try to simplyfy
                     for (n=0 ; n < comb.length ; n++) {
-                                          
-                            if ("X" === document.getElementById(button[comb[n][0]]).innerHTML &&
-                                "X" === document.getElementById(button[comb[n][1]]).innerHTML &&
-                                "X" === document.getElementById(button[comb[n][2]]).innerHTML 
+                                       
+                        if ("X" === document.getElementById(button[comb[n][0]]).innerHTML &&
+                           "X" === document.getElementById(button[comb[n][1]]).innerHTML &&
+                           "X" === document.getElementById(button[comb[n][2]]).innerHTML 
                             ) 
                             {
                             document.getElementById(button[comb[n][0]]).style.backgroundColor = "darkgreen"
@@ -106,13 +115,13 @@ function clicks(buttonnumber) {
                             document.getElementById(button[comb[n][2]]).style.backgroundColor = "darkgreen"
                             
                             document.getElementById("EndGame").style.visibility = 'visible'
-                            document.getElementById("EndGame").textContent = "You X-tra Smart Guy Won The Game"
-                                
-                                //Disable all the button after the Player wins
-                                        for(i=0 ; i < 9 ; i ++) 
-                                        {
-                                        document.getElementById(button[i]).disabled = true
-                                        }
+                            document.getElementById("EndGame").textContent = "X-tra Smart.. You Won The Game"
+
+                            
+                            //Disable all the button after the Player wins
+                            for(i=0 ; i < 9 ; i ++) {
+                            document.getElementById(button[i]).disabled = true
+                            }
                             }
                             
                                             
@@ -120,17 +129,26 @@ function clicks(buttonnumber) {
                     //Draw Funntion will check there is a draw ornot
                     
                     draw()
+                    
                }  //closing if
-                                      
+               
+              
             }
+
+            
     })
 
 }
+
+
+
 
 // For First X  this loop is created  and Function Click is called when the button is pressed
     for (num=0 ; num < 9 ;num++) 
     {
         clicks(num)
+        
     } 
 
-    
+
+
