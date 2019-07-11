@@ -9,8 +9,28 @@ function oddeven (number) {
 }
 
 var comb = ["012","345","678","036","147","258","246","048"]
-
 var button = ["one","two","three","four","five","six","seven","eight","nine"]
+function draw() {
+
+    
+    if  (
+            
+            document.getElementById(button[0]).innerHTML !== "click" &&
+            document.getElementById(button[1]).innerHTML !== "click" &&
+            document.getElementById(button[2]).innerHTML !== "click" &&
+            document.getElementById(button[3]).innerHTML !== "click" &&
+            document.getElementById(button[4]).innerHTML !== "click" &&
+            document.getElementById(button[5]).innerHTML !== "click" &&
+            document.getElementById(button[6]).innerHTML !== "click" &&
+            document.getElementById(button[7]).innerHTML !== "click" &&
+            document.getElementById(button[8]).innerHTML !== "click" 
+        ) 
+        {
+        console.log("Hi")
+        document.getElementById("EndGame").style.visibility = 'visible'
+        document.getElementById("EndGame").textContent = "You Both are Genious Try one more time"
+
+        }       
 
 /*Creating a funtion as not to repeat each time for every button
   ButtonNumber will be the input number whic
@@ -97,7 +117,9 @@ function clicks(buttonnumber) {
                             
                                             
                     } // for is ending
+                    //Draw Funntion will check there is a draw ornot
                     
+                    draw()
                }  //closing if
                                       
             }
