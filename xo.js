@@ -12,8 +12,6 @@ var comb = ["012","345","678","036","147","258","246","048"]
 
 var button = ["one","two","three","four","five","six","seven","eight","nine"]
 
-
-
 function draw() {
 
     
@@ -122,13 +120,20 @@ function clicks(buttonnumber) {
                             for(i=0 ; i < 9 ; i ++) {
                             document.getElementById(button[i]).disabled = true
                             }
+                            
+
+                            } //if end
+
+                            else {
+                                draw()
                             }
+
                             
                                             
                     } // for is ending
                     //Draw Funntion will check there is a draw ornot
                     
-                    draw()
+                    //draw()
                     
                }  //closing if
                
@@ -139,9 +144,6 @@ function clicks(buttonnumber) {
     })
 
 }
-
-
-
 
 // For First X  this loop is created  and Function Click is called when the button is pressed
     for (num=0 ; num < 9 ;num++) 
