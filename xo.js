@@ -72,7 +72,7 @@ function clicks(buttonnumber) {
                                 document.getElementById(button[comb[n][2]]).style.backgroundColor = "darkgreen"
 
                                 document.getElementById("EndGame").style.visibility = 'visible'
-                                document.getElementById("EndGame").textContent = "You OutPerformer Smart Guy Won The Game"
+                                document.getElementById("EndGame").textContent = "Outstanding, Smart, Chummeswari you Won The Game"
                                         //Disable all the button after the Player wins
                                         for(i=0 ; i < 9 ; i ++) 
                                         {
